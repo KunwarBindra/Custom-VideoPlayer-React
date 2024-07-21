@@ -1,0 +1,84 @@
+/* App component container */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Video element */
+.video {
+  width: 100%; /* Take up entire parent width */
+  height: 100vh; /* Maintain aspect ratio */
+  background-color: black; /* Optional background color */
+}
+
+/* Controls container */
+.controlsContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Control icons */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.controlsIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.controlsIcon--small {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+/* Time controls container */
+.timecontrols {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Progress bar container */
+.time_progressbarContainer {
+  background-color: gray;
+  border-radius: 15px;
+  width: 90%;
+  height: 5px;
+  position: relative;
+}
+
+/* Progress bar */
+.time_progressBar {
+  border-radius: 15px;
+  background-color: indigo;
+  height: 100%;
+}
+
+/* Time display */
+.controlsTime {
+  color: white;
+  margin: 0 10px;
+}
